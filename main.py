@@ -37,9 +37,26 @@ def ImgToAscii(path):
     except ValueError as ve:
         print(str(ve).upper())
 
+def saveImageText(ascii_image):
+    while True:
+        option = input("DO YOU WANT TO TURN IT INTO A .TXT FILE? y/n").upper()
+        if(option == "Y"):
+            try:
+                with open("asci_image.txt", "a") as file:
+                    file.write(ascii_image)
+            except:
+                print("CANNOT SAVE THE ASCII IMAGE")
+            print("ASCII IMAGE SAVED")
+            break
+        elif option == "N":
+            return
+        else:
+            pass
+
 if __name__ == "__main__":
     path = input("TYPE THE IMAGE'S PATH:")
     ascii_image = ImgToAscii(path)
     if ascii_image:
         os.system("cls||clear")
         print(ascii_image)
+        saveImageText(ascii_image)
