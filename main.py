@@ -4,7 +4,7 @@ import os
 ascii_chars = ["#", "@", "%", "*", "+", "=", "-", ":", ".", " "]
 
 # Resize image
-def ResizeImage(image, new_width=200):
+def ResizeImage(image, new_width=100):
     width, height = image.size
     ratio = height // width
     new_height = new_width * ratio
@@ -37,6 +37,7 @@ def ImgToAscii(path):
     except ValueError as ve:
         print(str(ve).upper())
 
+# Saves an ascii image to a .txt file
 def saveImageText(ascii_image):
     while True:
         option = input("DO YOU WANT TO TURN IT INTO A .TXT FILE? y/n").upper()
