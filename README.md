@@ -2,6 +2,8 @@
 
 This project is a python script that converts as image into an ASCII art representation. It uses the Python Imaging Library (PIL) to manipulate the image and convert it into a grayscale image, which is then converted into an ASCII art representation using a predefined set of ASCII characters.
 
+<img src="./github/preview2.png" width="500">
+
 ## ⚙️ Installation
 
 To run this project, you need to have Python installed on your system. You can download the latest version of Python from the official Python website.
@@ -14,6 +16,8 @@ pip install pillow
 ## 💡 Usage
 
 To use this script, simply run the `main.py` file and enter the path to the image you want convert when prompted.
+
+<img src="./github/preview1.png" width="500">
 
 ## 📝 Notes
 
